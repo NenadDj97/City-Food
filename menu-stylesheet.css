@@ -55,6 +55,7 @@ html::-webkit-scrollbar {
 html {
     -ms-overflow-style: none;
     scrollbar-width: none;
+    height: 100vh;
 }
 
 a{

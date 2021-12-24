@@ -11,3 +11,16 @@ $("#back").click(function() {
         scrollTop: $("#logo").offset().top
     }, 2000);
 });
+
+function resizer() {
+    $("#content").width(newWidth);
+    $("#content").height(newHeight);
+}
+
+function startResize() {
+    $(window).resize(resizer);
+}
+
+function endResize() {
+    $(window).off("resize", resizer);
+}

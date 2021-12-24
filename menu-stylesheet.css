@@ -55,11 +55,15 @@ html::-webkit-scrollbar {
 html {
     -ms-overflow-style: none;
     scrollbar-width: none;
-    height: 100vh;
+height: -webkit-fill-available;
+
 }
 
 body {
     position: fixed;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+
 }
 
 a{

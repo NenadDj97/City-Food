@@ -14,7 +14,7 @@ $("#back").click(function() {
 
 function resetHeight(){
     // reset the body height to that of the inner browser
-    document.body.style.height = window.innerHeight + "px";
+    document.style.height = window.innerHeight + "px";
 }
 // reset the height whenever the window's resized
 window.addEventListener("resize", resetHeight);

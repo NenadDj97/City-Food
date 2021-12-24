@@ -11,3 +11,7 @@ $("#back").click(function() {
         scrollTop: $("#logo").offset().top
     }, 2000);
 });
+
+function ViewH() {
+document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`);
+}

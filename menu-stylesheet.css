@@ -79,6 +79,10 @@ a{
 overflow: hidden;
 }
 
+#bbcont{
+position: relative;
+}
+
 .blackboard{
     height: 90%;
     width: 100%;

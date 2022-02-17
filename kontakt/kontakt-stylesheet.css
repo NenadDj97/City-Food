@@ -345,6 +345,12 @@ h3{
     text-transform: lowercase;
 }
 
+.headerz{
+ margin: 20px 10px;
+ width:100%;
+ height: auto;
+}
+
 .map-responsive{
     overflow:hidden;
     margin: 20px 10px;

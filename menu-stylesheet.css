@@ -399,14 +399,22 @@ a{
 }
 
 .item-price{
-    width: 75px;
-    height: 75px;
-    display: table;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-top: 5px;
 }
 
 .item-price h1{
     vertical-align: top;
+   text-align: center;
+}
+
+.item-price h3{
+    vertical-align: bottom;
+    text-align: center;
 }
 
 .item-info{
@@ -428,7 +436,7 @@ a{
 }
 
 .item-comp{
-    width: 100%;
+    width: 95%;
     min-height: 50%;
     display: table;
     margin-left: 20px;

@@ -172,13 +172,13 @@ a{
     flex-direction: column;
     align-items: center;
     z-index: 3;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .main-logo{
     height: auto;
     width: 100%;
-    padding: 5%;
+    padding: 0 5%;
 }
 
 .main-logo img{
@@ -188,7 +188,7 @@ a{
 
 .main-nav{
     width: 100%;
-    padding: 30px 10px;
+    padding: 5px 10px;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -275,6 +275,27 @@ a{
     background-size:contain;
     background-repeat: no-repeat;
     background-position: right;
+}
+
+.partners{
+    white-space: nowrap;
+    width: 100%;
+    display: table;
+    padding: 0;
+}
+
+.logo-partner {
+    vertical-align: middle;
+    padding: 10px;
+    display: table-cell;
+}
+
+.logo-partner img {
+    max-width: 100%;
+}
+
+.logo-partner img:hover{
+    transform: scale(1.1);
 }
 
 .menu-col{
@@ -541,6 +562,21 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    justify-content: flex-start;
+}
+
+.informacije .social{
+    flex-direction: row;
+}
+
+.social.delivery .btn-img{
+    height: auto;
+    width: auto;
+}
+
+.social.delivery .btn-img img{
+    width: 80px;
+    height: 60px;
 }
 
 .soc-btn{
@@ -554,8 +590,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 .btn-img{
-    height:25px;
-    width: 25px;
+    height:40px;
+    width: 40px;
     margin-right: 10px;
 }
 
@@ -566,8 +602,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 .btn-img img{
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
 }
 
 .btn-label h1:hover{
@@ -617,6 +653,17 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         border-width: 150px;
     }
 
+    .btn-img{
+        height:30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+    
+    .btn-img img{
+        height: 30px;
+        width: 30px;
+    }
+
 }
 
 @media screen and (max-width: 1300px){
@@ -654,6 +701,22 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
     .deliver-ico{
         padding-bottom: 48%;
+    }
+
+    .btn-img{
+        height:25px;
+        width: 25px;
+        margin-right: 10px;
+    }
+    
+    .btn-img img{
+        height: 25px;
+        width: 25px;
+    }
+
+    .social.delivery .btn-img img{
+        width: 50px;
+        height: 37px;
     }
 
 }

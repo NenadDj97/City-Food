@@ -246,16 +246,20 @@ a{
     width: 60%;
     height:100%;
     color:#E6E6E6;
-    font-family: "Nexa Handmade Condensed";
-    font-size: 60px !important;
+    font-family: "U-Bold";
+    font-weight: normal;
+    font-size: 28px !important;
 }
 
 .info.number{
     color:#ff0000;
+    font-size: 34px !important;
+    font-family: "U-Heavy";
 }
 
 .main-deliver:hover #num{
     color:#FFC29C !important;
+    transform: scale(1.4);
 }
 
 .main-deliver:hover .deliver-ico{
@@ -285,7 +289,7 @@ a{
 
 .logo-partner {
     vertical-align: middle;
-    padding: 10px;
+    padding: 15px;
     display: table-cell;
 }
 
@@ -310,6 +314,10 @@ a{
 .menu-col.left{
     padding-right: 20px;
     
+}
+
+.menu-col.left .no-scrollbar, .menu-col.right .no-scrollbar{
+    padding-top: 0;
 }
 
 .no-scrollbar{
@@ -508,6 +516,11 @@ h3{
 
 .item-price h1{
     color: #ff0000 !important;
+    font-size: 32px !important;
+}
+
+#mala-slova{
+    text-transform: none;
 }
 
 
@@ -525,6 +538,10 @@ h3{
         font-size: 18px !important;
     }
 
+    .item-price h1{
+        font-size: 24px !important;
+    }
+
     .main-nav{
         font-size: 24px !important;
         box-sizing: content-box;
@@ -536,7 +553,11 @@ h3{
     }
 
     .deliver-info{
-        font-size: 36px !important;
+        font-size: 20px !important;
+    }
+
+    .info.number{
+        font-size: 24px !important;
     }
 
     .deliver-ico{
@@ -568,6 +589,10 @@ h3{
         font-size: 14px !important;
     }
 
+    .item-price h1{
+        font-size: 18px !important;
+    }
+
     .cat-cont.small h1{
         font-size: 16px !important;
         vertical-align: top !important;
@@ -597,7 +622,11 @@ h3{
     }
 
     .deliver-info{
-        font-size: 30px !important;
+        font-size: 16px !important;
+    }
+
+    .info.number{
+        font-size: 18px !important;
     }
 
     .deliver-ico{
@@ -682,7 +711,11 @@ h3{
     }
 
     .deliver-info{
-        font-size: 35px !important;
+        font-size: 19px !important;
+    }
+
+    .info.number{
+        font-size: 22px !important;
     }
 
     .deliver-ico{
@@ -702,7 +735,11 @@ h3{
 @media screen and (max-width: 840px){
 
     .deliver-info{
-        font-size: 25px !important;
+        font-size: 13px !important;
+    }
+
+    .info.number{
+        font-size: 16px !important;
     }
 
     .cat-ico img{
@@ -836,7 +873,11 @@ h3{
     }
 
     .deliver-info{
-        font-size: 30px !important;
+        font-size: 19px !important;
+    }
+
+    .info.number{
+        font-size: 22px !important;
     }
 
     .cat-cont{
@@ -892,6 +933,9 @@ h3{
         font-size: 14px !important;
     }
     
+    .item-price h1{
+        font-size: 20px !important;
+    }
 }
 
 @media screen and (max-width: 435px){
@@ -922,7 +966,11 @@ h3{
     }
 
     .deliver-info{
-        font-size: 20px !important;
+        font-size: 15px !important;
+    }
+
+    .info.number{
+        font-size: 19px !important;
     }
 
     .cat-ico img{
@@ -942,6 +990,10 @@ h3{
 
     h3{
         font-size: 12px !important;
+    }
+
+    .item-price h1{
+        font-size: 16px !important;
     }
 
     .cat-cont.small h1{
@@ -974,6 +1026,8 @@ h3{
         -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0) 2%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 92%, rgba(0,0,0,0) 98%);
     
         mask-image: linear-gradient(180deg, rgba(0,0,0,0) 2%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 92%, rgba(0,0,0,0) 98%);
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
     .main-nav{

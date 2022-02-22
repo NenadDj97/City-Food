@@ -385,7 +385,6 @@ h3{
 .cell img{
     max-width: 100%;
 }
-
     
 @media screen and (max-width:1800px){
 
@@ -467,15 +466,13 @@ h3{
 @media screen and (max-width: 1100px){
     .limiter-left{
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
+        justify-content: flex-start;
         padding-left: 40%;
         overflow: scroll;
         -ms-overflow-style: none;
         scrollbar-width: none;
         height: auto;
         -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
-    
         mask-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
     }
 
@@ -485,6 +482,10 @@ h3{
         margin: 0 0 0 0;
         padding: 0 0 0 0;
         position: relative;
+    }
+
+    .menu-col.left .no-scrollbar{
+        padding-top: 50px;
     }
 
     .menu-col.left, .menu-col.right{
@@ -595,9 +596,9 @@ h3{
     .content{
         overflow: auto;
         padding: 10px;
-        -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0) 4%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 92%);
+        -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0) 2%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 92%);
     
-        mask-image: linear-gradient(180deg, rgba(0,0,0,0) 4%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 92%);
+        mask-image: linear-gradient(180deg, rgba(0,0,0,0) 2%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 92%);
     }
 
     .limiter{
@@ -732,6 +733,75 @@ h3{
 
     h3{
         font-size: 9px;
+    }
+
+}
+
+@media screen and (max-height: 580px) and (orientation: landscape){
+
+    .no-scrollbar{
+        justify-content: flex-start;
+    }
+
+    .main{
+        overflow-y:scroll;
+        overflow-x:hidden;
+        align-items:flex-start;
+        justify-content:flex-start;
+        -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0) 2%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 92%, rgba(0,0,0,0) 98%);
+    
+        mask-image: linear-gradient(180deg, rgba(0,0,0,0) 2%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 92%, rgba(0,0,0,0) 98%);
+    }
+
+    .main-nav{
+        flex-direction: row;
+        font-size: 15px;
+        padding: 10px 0;
+    }
+
+    .main-deliver{
+        min-height: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .deliver-ico{
+        display: none;
+    }
+
+    .menu-col.left .no-scrollbar{
+        padding-top: 10px;
+    }
+
+    .brd-frm{
+        border-width: 0;
+        border-image: none;
+        background-image: transparent;
+    }
+
+    .content{
+        padding: 5px;
+    }
+
+}
+
+@media screen and (max-height: 320px) and (orientation: landscape){
+
+    .main-nav{
+        font-size: 12px;
+        padding: 5px 0;
+    }
+
+    h1{
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 12px;
+    }
+
+    h3{
+        font-size: 12px;
     }
 
 }

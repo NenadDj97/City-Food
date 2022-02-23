@@ -1016,6 +1016,14 @@ h3{
 
 }
 
+@media screen and (max-height: 670px){
+    .main{
+        overflow-y:scroll;
+        overflow-x:hidden;
+        justify-content:flex-start;
+    }
+}
+
 @media screen and (max-height: 580px) and (orientation: landscape){
 
     .no-scrollbar{

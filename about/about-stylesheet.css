@@ -784,7 +784,7 @@ h3{
 
     .main-nav{
         flex-direction: row;
-        font-size: 15px;
+        font-size: 15px !important;
         padding: 10px 0;
     }
 
@@ -812,25 +812,30 @@ h3{
         padding: 5px;
     }
 
+    .top.category{
+        margin-top: 0;
+    }
+
 }
 
 @media screen and (max-height: 320px) and (orientation: landscape){
 
     .main-nav{
-        font-size: 12px;
+        font-size: 12px !important;
         padding: 5px 0;
     }
 
     h1{
-        font-size: 12px;
+        font-size: 12px !important;
     }
 
     h2{
-        font-size: 12px;
+        font-size: 12px !important;
     }
 
     h3{
-        font-size: 12px;
+        font-size: 12px !important;
     }
+
 
 }

@@ -1035,7 +1035,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
     .main-nav{
         flex-direction: row;
-        font-size: 15px;
+        font-size: 15px !important;
         padding: 10px 0;
     }
 
@@ -1063,25 +1063,32 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         padding: 5px;
     }
 
+    .top.category{
+        margin-top: 0;
+    }
+
+    .headerz{
+        padding-top: 10px;
+    }
+
 }
 
 @media screen and (max-height: 320px) and (orientation: landscape){
 
     .main-nav{
-        font-size: 12px;
+        font-size: 12px !important;
         padding: 5px 0;
     }
 
     h1{
-        font-size: 12px;
+        font-size: 12px !important;
     }
 
     h2{
-        font-size: 12px;
+        font-size: 12px !important;
     }
 
     h3{
-        font-size: 12px;
+        font-size: 12px !important;
     }
-
 }

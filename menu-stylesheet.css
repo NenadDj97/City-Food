@@ -77,6 +77,10 @@ body {
     position: fixed;
 }
 
+.cat-slider{
+   display: none;
+}
+
 a{
     list-style: none;
     color: inherit;
@@ -91,6 +95,8 @@ a{
     padding: 50px;
     display: flex;
     position: relative;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 #brd-cont{
@@ -112,6 +118,8 @@ a{
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 #back{
@@ -528,6 +536,8 @@ h3{
 }
 
 
+
+
 @media screen and (max-width:1800px){
 
     h1{
@@ -797,12 +807,108 @@ h3{
         display: block;
     }
 
+    .cat-slider{
+        position:fixed;
+        top: 0;
+        left: 0;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        z-index: 5;
+        padding: 35px 50px 0 40px;
+        transition: .5s ease;
+    }
+
+    .cat-slider img{
+        display: block;
+        max-width: auto;
+        max-height: auto;
+        width: auto;
+        height: auto;
+    }
+    
+    .slider-icons{
+        display: flex;  
+        flex-direction: row;
+        overflow-x: scroll;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        overflow-y:hidden;
+    }
+
+    .slider-icons .cat-ico{
+        margin: 5px 10px; 
+    }
+
+    .slider-icons .cat-ico img{
+        height:50px !important;
+        width: 50px !important;
+    }
+    
+    .cat-slider.slidown{
+        position:fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100px;
+        z-index: 5;
+        padding: 30px 50px 0 40px;
+        background-color: 0;
+    }
+    
+    .slider-icons.slidown{
+        display: flex;
+        flex-direction: row;
+        overflow-y:visible;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        width: 100%;
+        height: auto;
+        -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0) 1%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 99%);
+        
+        mask-image: linear-gradient(90deg, rgba(0,0,0,0) 1%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 99%);
+        padding: 0 10px;
+    }
+    
+    .sliderarrow{
+        position: absolute;
+        right:30px;
+        bottom: -40px;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+    
+    .sliderarrow.slidown{
+        position: absolute;
+        right:30px;
+        bottom: 0;
+        transform: rotate(180deg);
+    }
+
     .content{
         overflow: auto;
         padding: 10px;
         -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0) 2%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 92%);
     
         mask-image: linear-gradient(180deg, rgba(0,0,0,0) 2%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 92%);
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .content.slidown{
+        overflow: auto;
+        padding: 10px;
+        padding-top: 70px;
+        -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0) 70px, rgba(0,0,0,1) 85px, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 92%);
+    
+        mask-image: linear-gradient(180deg, rgba(0,0,0,0) 70px, rgba(0,0,0,1) 85px, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 92%);
     }
 
     .limiter{
@@ -829,6 +935,10 @@ h3{
         position: relative;
         border-width: 0;
         padding-top: 20px;
+    }
+
+    .main.slidown{
+        padding-top: 5px;
     }
 
     .main-logo{
@@ -909,12 +1019,19 @@ h3{
         margin-left: 5px;
     }
 
+    .background{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
     .blackboard{
         height: 100%;
-        height: -moz-available;
-        height: -webkit-fill-available;
-        height: fill-available;
-        height: stretch;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height: fill-available;
+        min-height: stretch;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
     .brd-frm{
@@ -946,7 +1063,7 @@ h3{
         height: 0;
         width:100%;
         padding-bottom: 100%;
-        }
+        }   
 
 }
 

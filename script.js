@@ -17,3 +17,9 @@ $("#menu-btn").click(function() {
         scrollTop: $("#menu-top").offset().top
     }, 1300);
 });
+
+const slidownBtn = document.getElementById('sldarw');
+
+slidownBtn.addEventListener('click', ()=>{
+    document.querySelectorAll('.content, .cat-slider, .sliderarrow, .slider-icons, .main').forEach(el => el.classList.toggle('slidown'));
+});

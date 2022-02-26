@@ -701,10 +701,12 @@ h3{
 
     .blackboard{
         height: 100%;
-        height: -moz-available;
-        height: -webkit-fill-available;
-        height: fill-available;
-        height: stretch;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height: fill-available;
+        min-height: stretch;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 
     .brd-frm{

@@ -336,7 +336,7 @@ a{
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:baseline;
     align-content: center;
 }
 
@@ -387,6 +387,10 @@ h3{
 
 .cell img{
     max-width: 100%;
+}
+
+.menu-col.right .no-scrollbar{
+    padding-top: 20px;
 }
     
 @media screen and (max-width:1800px){
@@ -496,7 +500,11 @@ h3{
     }
 
     .menu-col.left .no-scrollbar{
-        padding-top: 50px;
+        padding-top: 10px;
+    }
+
+    .menu-col.right .no-scrollbar{
+        padding-top: 0;
     }
 
     .menu-col.left, .menu-col.right{
@@ -560,6 +568,18 @@ h3{
 
     .info.number{
         font-size: 16px !important;
+    }
+
+    .menu-col.left .no-scrollbar{
+        padding-top: 20px;
+    }
+
+    .menu-col.right .no-scrollbar{
+        padding-top: 0;
+    }
+
+    .menu-col.left .no-scrollbar{
+        padding-top: 10px;
     }
 
 }

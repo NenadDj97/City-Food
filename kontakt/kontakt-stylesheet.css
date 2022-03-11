@@ -227,6 +227,7 @@ a{
     flex-direction: row;
     justify-content: space-between;
     position: relative;
+    cursor: default;
 }
 
 #delivery-btn::before{
@@ -258,26 +259,38 @@ a{
     font-family: "U-Heavy";
 }
 
-.main-deliver:hover #num{
+.main-deliver:hover .info.number{
+    transform: scale(1.14);
+}
+
+.info.number:hover{
     color:#FFC29C !important;
 }
 
-.main-deliver:hover .deliver-ico{
-    transform: rotate(-5deg) translateX(10px);
+.nav-btn.active{
+    color: #ff0000;
 }
 
-.main-deliver:hover .info{
-    transform: scale(1.15);
+.nav-btn.active a:hover{
+    color: #FFC29C;
 }
 
 .deliver-ico{
     width: 50%;
-    height: 0;
-    padding-bottom: 52.5%;
-    background-image: url(../images/deliverico.png);
+    height: auto;
+    min-height: 50%;
+    display: table-cell;
     background-size:contain;
     background-repeat: no-repeat;
     background-position: right;
+    position: relative;
+}
+
+.deliver-ico img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .partners{
@@ -285,11 +298,16 @@ a{
     width: 100%;
     display: table;
     padding: 0;
+    z-index:999;
+}
+
+.partners:hover{
+    width: 110%;
 }
 
 .logo-partner {
     vertical-align: middle;
-    padding: 15px;
+    padding: 0 3px;
     display: table-cell;
 }
 
@@ -619,7 +637,50 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     padding: 20px 10px;
     width:100%;
     height: auto;
-   }
+}
+
+.main-celebration{
+    margin-top: 10px;
+    width: 98%;
+    max-height: 100%;
+    min-height: 120px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    cursor:default;
+    background: url(../images/celebration-bg.png) no-repeat bottom;
+    background-size: contain;
+}
+
+.celeb-info{
+    width: 100%;
+    padding-left: 10%;
+    font-size: 28px;
+}
+
+.vrh{
+    font-family: "U-Reg";
+    color: #ff0000;
+}
+
+.sred{
+    font-family: "U-Heavy";
+    color:#ff0000;
+}
+
+.dol{
+    font-family: "U-Bold";
+    color:#DBDBDB;
+}
+
+#by{
+    font-family: "U-Reg";
+    font-size: 8px;
+    color: #FFC29C;
+}
+
 
     
 @media screen and (max-width:1800px){
@@ -654,8 +715,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         font-size: 24px !important;
     }
 
-    .deliver-ico{
-        padding-bottom: 48%;
+    .celeb-info{
+        font-size: 18px;
     }
 
     .brd-frm{
@@ -712,9 +773,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         font-size: 18px !important;
     }
 
-    .deliver-ico{
-        padding-bottom: 48%;
-    }
 
     .btn-img{
         height:25px;
@@ -730,6 +788,10 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     .social.delivery .btn-img img{
         width: 50px;
         height: 37px;
+    }
+
+    #by{
+        font-size: 6px;
     }
 
 }
@@ -795,9 +857,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         font-size: 22px !important;
     }
 
-    .deliver-ico{
-        padding-bottom: 43%;
-    }
+
 
     .background{
         padding: 25px;
